@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">News </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="HomeFragment">home  fragment</string>
+    <string name="CategoryFragment">category  fragment</string>
+    <string name="FavoriteFragment">favorite  fragment</string>
+
+
+    <string name="Home">Top Headline  </string>
+    <string name="FootBall">FootBall  </string>
+    <string name="Favorite">Favorite  </string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/newsFragment">
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.test23.ui.fragments.NewsFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_newsFragment_to_homeNewsFragment"
+            app:destination="@id/homeNewsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeNewsFragment"
+        android:name="com.example.test23.ui.fragments.HomeNewsFragment"
+        android:label="HomeNewsFragment" >
+
+        <argument
+            android:name="Artical"
+            app:argType="com.example.test23.data.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/footBallFragment2"
+        android:name="com.example.test23.ui.fragments.football.FootBallFragment"
+        android:label="FootBallFragment" >
+
+        <action
+            android:id="@+id/action_footBallFragment2_to_homeNewsFragment"
+            app:destination="@id/homeNewsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchNewsFragment2"
+        android:name="com.example.test23.ui.fragments.search.SearchNewsFragment"
+        android:label="SearchNewsFragment" >
+        <action
+            android:id="@+id/action_searchNewsFragment2_to_homeNewsFragment"
+            app:destination="@id/homeNewsFragment" />
+    </fragment>
+</navigation>
